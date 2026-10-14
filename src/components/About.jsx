@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Users, ShieldCheck, Building2, Award } from 'lucide-react'
-import { aboutHighlights } from '../data/portfolioData'
+import { aboutHighlights, aboutText, targetRoles } from '../data/portfolioData'
 
 const iconMap = {
   Users,
@@ -68,19 +68,21 @@ const About = () => {
             <div className="heading-underline" />
 
             <div className="about__text-block">
-              <p>
-                I am a medical professional with a strong background in hospital operations,
-                quality management and patient safety. Over the past 13+ years, I have worked
-                in ICU, emergency and multi-specialty hospitals, leading clinical and
-                administrative teams, implementing quality systems and ensuring compliance with
-                national and international standards.
-              </p>
-              <p>
-                Currently, I serve as Medical Head (Admin) at Siddhachal Hospitals, Mumbai, and
-                I am seeking opportunities in the UAE in Hospital Operations, Quality
-                Management or Patient Safety roles.
-              </p>
+              {aboutText.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </div>
+
+            {targetRoles && targetRoles.length > 0 && (
+              <div className="about__target-roles">
+                <span className="about__roles-label">Target UAE Roles:</span>
+                <div className="about__role-pills">
+                  {targetRoles.map((role, idx) => (
+                    <span key={idx} className="about__role-pill">{role}</span>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <a href="#expertise" onClick={scrollToExpertise} className="btn about__btn">
               <span>View Expertise</span>

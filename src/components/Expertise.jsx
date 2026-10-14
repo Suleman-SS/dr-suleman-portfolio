@@ -5,8 +5,10 @@ import {
   Activity,
   Award,
   FileCheck,
+  FileText,
   BarChart3,
   AlertTriangle,
+  TrendingUp,
   Users,
 } from 'lucide-react'
 import { expertise } from '../data/portfolioData'
@@ -17,8 +19,10 @@ const iconMap = {
   Activity,
   Award,
   FileCheck,
+  FileText,
   BarChart3,
   AlertTriangle,
+  TrendingUp,
   Users,
 }
 

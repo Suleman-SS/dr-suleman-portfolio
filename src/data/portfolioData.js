@@ -1,27 +1,40 @@
 export const personalInfo = {
   name: 'Dr. Sayed Suleman Shoukat',
   title: 'Hospital Operations & Quality Manager',
+  subTitle: 'CMO - Clinical Head | Seeking Hospital Administrator / Operational Head Roles',
   tagline: 'Patient Safety | Clinical Governance | Hospital Administration',
-  heroDescription: '13+ years of experience in ICU, Emergency and Hospital Administration across NABH-accredited multi-specialty hospitals.',
+  heroDescription: '13+ years of experience across ICU, Emergency and Hospital Administration in NABH-accredited multi-specialty hospitals. Experienced in QMS, patient safety, clinical governance, risk management, and accreditation readiness.',
   email: 'dr.suleman@outlook.com',
   phone: '+91-8208267265',
   phoneLink: 'tel:+918208267265',
+  dubaiPhone: '00971555771324',
+  dubaiPhoneLink: 'tel:+971555771324',
+  dubaiAvailability: 'Available in Dubai from 27 October to 9 November',
   location: 'Mumbai, India',
   uaeTarget: 'Dubai / Abu Dhabi',
   cvPath: './cv.pdf',
 }
 
 export const stats = [
-  { value: '13+', label: 'Years of Experience', icon: 'Award' },
+  { value: '13+', label: 'Years Total Experience', icon: 'Award' },
+  { value: '8+ Yrs', label: 'Hospital Quality Management', icon: 'ShieldCheck' },
   { value: '24x7', label: 'ICU & Emergency Operations', icon: 'Clock' },
-  { value: 'NABH', label: 'Quality & Safety Experience', icon: 'ShieldCheck' },
-  { value: 'Open to Relocate', label: 'UAE (Dubai / Abu Dhabi)', icon: 'MapPin' },
+  { value: 'In Dubai', label: '27 Oct – 9 Nov (Available)', icon: 'MapPin' },
 ]
 
 export const aboutText = [
-  'Dr. Sayed Suleman Shoukat is a medical and hospital operations professional with more than 13 years of experience across ICU, Emergency and Hospital Administration.',
-  'His experience includes quality management, patient safety, hospital operations, accreditation preparation, clinical governance and multidisciplinary coordination across NABH-accredited hospitals.',
-  'He is open to Hospital Operations, Quality Management, Patient Safety and Clinical Governance opportunities in the UAE.',
+  'Dr. Sayed Suleman Shoukat is a Hospital Operations and Quality professional with more than 13 years of experience across ICU, Emergency and Hospital Administration in NABH-accredited multi-specialty hospitals.',
+  'Experienced in quality management systems (QMS), patient safety, clinical governance, risk management, accreditation readiness (NABH / JCI / DOH / ISO), incident management and KPI reporting.',
+  'Currently serving as Medical Head (Admin) at Siddhachal Hospitals, Mumbai. Seeking Hospital Administrator, Operational Head, Clinical Head and healthcare operations leadership roles in the UAE.',
+]
+
+export const targetRoles = [
+  'Hospital Operations Manager',
+  'Quality Manager',
+  'Patient Safety Manager',
+  'Clinical Governance',
+  'Hospital Administration',
+  'CMO / Clinical Head',
 ]
 
 export const currentRole = {
@@ -30,19 +43,19 @@ export const currentRole = {
 }
 
 export const expertise = [
-  { title: 'Quality Management System (QMS)', icon: 'ClipboardCheck', description: 'Implementation and maintenance of quality management systems across hospital environments.' },
-  { title: 'Patient Safety & Clinical Governance', icon: 'ShieldCheck', description: 'Safety protocols, incident reporting and clinical governance frameworks.' },
-  { title: 'Hospital Operations & Triage Management', icon: 'Activity', description: 'ICU, emergency and triage operations management.' },
-  { title: 'NABH / JCI / DOH Standards', icon: 'Award', description: 'Accreditation preparation and compliance with national and international standards.' },
-  { title: 'Quality Policies, SOPs & CAPA', icon: 'FileCheck', description: 'Development of quality policies, standard operating procedures and corrective actions.' },
-  { title: 'KPI Monitoring & Reporting', icon: 'BarChart3', description: 'Quality indicators, KPI dashboards and performance reporting.' },
-  { title: 'Risk Management & Incident Reporting', icon: 'AlertTriangle', description: 'Risk assessment, incident reporting and mitigation strategies.' },
-  { title: 'Team Leadership & Coordination', icon: 'Users', description: 'Multidisciplinary team leadership and inter-departmental coordination.' },
+  { title: 'Quality Management System (QMS)', icon: 'ClipboardCheck', description: 'Implementation, SOPs, audits and compliance across multi-specialty hospital environments.' },
+  { title: 'JCI / NABH / DOH / ISO Standards', icon: 'Award', description: 'Accreditation readiness, surveys and compliance under national and international frameworks.' },
+  { title: 'Patient Safety & Clinical Governance', icon: 'ShieldCheck', description: 'Safety protocols, clinical governance frameworks, and infection control compliance.' },
+  { title: 'Accreditation Readiness, Audits & Surveys', icon: 'FileCheck', description: 'Rigorous audit preparation, internal training, gap analysis and survey execution.' },
+  { title: 'Quality Policies, SOPs & CAPA', icon: 'FileText', description: 'Drafting policies, operational standard operating procedures, and CAPA planning.' },
+  { title: 'KPI Monitoring & Trend Analysis', icon: 'BarChart3', description: 'Quality indicator tracking, incident reporting, dashboards and performance trends.' },
+  { title: 'Hospital Operations & Triage Management', icon: 'Activity', description: 'ICU/ICCU, emergency services, casualty, OT, and roster management.' },
+  { title: 'DHA Regulations & Continuous Improvement', icon: 'TrendingUp', description: 'Awareness of UAE healthcare regulatory frameworks and driving CQI culture.' },
 ]
 
 export const aboutHighlights = [
   { icon: 'Users', title: 'Clinical Leadership and Team Management' },
-  { icon: 'ShieldCheck', title: 'Quality & Safety Focused Approach' },
+  { icon: 'ShieldCheck', title: '8+ Years Quality & Safety Focus' },
   { icon: 'Building2', title: 'Strong Hospital Operations Experience' },
   { icon: 'Award', title: 'Committed to Continuous Improvement' },
 ]
@@ -54,9 +67,9 @@ export const experience = [
     organization: 'Siddhachal Hospitals, Lalbaug, Mumbai',
     image: './assets/hospital-building.jpg',
     responsibilities: [
-      'Leading medical administration, hospital operations and quality compliance',
-      'Managing doctor rosters, inter-departmental coordination and patient safety audits',
-      'Working on NABH compliance and various hospital development initiatives',
+      'Lead medical administration and operations; ensure compliance with quality standards and safety protocols using NABH framework, transferable to JCI/DOH environments.',
+      'Develop and monitor quality policies, operational SOPs and duty rosters; drive inter-departmental coordination.',
+      'Prepare quality reports and dashboards for leadership review; promote continuous quality improvement culture.',
     ],
   },
   {
@@ -65,41 +78,39 @@ export const experience = [
     organization: 'Lion Tarachand Bapa Hospital, Sion, Mumbai',
     image: './assets/hospital-corridor.jpg',
     responsibilities: [
-      'Managed 24x7 ICU/ICCU operations, critical care protocols and emergency triage',
-      'Supervised medical officers, nursing team and equipment readiness',
-      'Supported quality initiatives and critical case counselling',
+      'Managed 24x7 ICU/ICCU operations, triage and emergency response; ensured documentation and clinical governance.',
+      'Led quality and patient safety programs; analyzed quality indicators and implemented corrective actions.',
+      'Collaborated with clinical and operational teams to improve patient outcomes and compliance.',
     ],
   },
   {
     period: '2019 – 2021',
-    title: 'ICU & EMS Intensivist',
-    organization: 'Advanced Multispecialty (BKC), Jeevan Jyot Charitable Trust & Parking Plaza Hospitals, Mumbai\nPG Internship – Prince Aly Khan Hospital, Byculla (2015)',
+    title: 'ICU & EMS Intensivist – Hospital Operations',
+    organization: 'Advanced Multispecialty, BKC; Jeevan Jyot; Parking Plaza, Mumbai\nPG Internship at Prince Aly Khan Hospital (2015)',
     image: './assets/hospital-operations.jpg',
     responsibilities: [
-      'Managed ICU, OT, casualty and emergency medical services',
-      'Handled emergency management and clinical support',
-      'PG Internship – Prince Aly Khan Hospital, Byculla (2015)',
+      'Handled OT, ICU, casualty and emergency medical services across multiple hospitals.',
+      'Supported accreditation activities and operational HR at hospital level.',
     ],
   },
   {
     period: '2016 – 2019',
     title: 'Head of Safety Department & NABH Committee Member',
-    organization: 'Sukhakarta, Riddhi, Sujata Birla & Suvichar Hospitals, Mumbai & Nashik',
+    organization: 'Sukhakarta Critical Care, Riddhi Multispeciality, Sujata Birla, Suvichar — Mumbai & Nashik',
     image: './assets/qs-operations.jpg',
     responsibilities: [
-      'Led safety department and drove quality audits and safety protocols',
-      'Managed ICU operations and hospital management for multi-specialty units',
-      'Member of NABH committee and supported accreditation activities',
+      'Established, implemented and maintained QMS processes; reported QMS performance to management in line with Quality Manager responsibilities.',
+      'Promoted awareness of customer requirements and patient safety across the organization.',
+      'Led safety audits, risk management and CAPA planning.',
     ],
   },
   {
     period: '2012 – 2016',
     title: 'ICU Medical Officer – Early Clinical Tenure',
-    organization: 'Shri Guruji Rugnalaya, Sai Care, Unity, Vighnahar & Sanjivini Hospitals, Nashik Region',
+    organization: 'Shri Guruji Rughunaya, Nasik Hospital & Research Centre, Sai Care, Unity, Vighnahar & Sanjivini Hospitals — Nashik Region',
     image: './assets/hospital-building.jpg',
     responsibilities: [
-      'Provided ICU patient care, emergency management and critical care support',
-      'Built foundational experience in hospital operations and patient assessment',
+      'Built foundational expertise in ICU patient assessment, emergency management and critical care support.',
     ],
   },
 ]
@@ -109,33 +120,33 @@ export const qualitySafety = [
     title: 'Quality Management',
     icon: 'ClipboardCheck',
     image: './assets/qs-team-consult.jpg',
-    items: ['QMS implementation', 'SOPs and documentation', 'Quality indicators', 'Audit preparation and surveys'],
+    items: ['QMS implementation & maintenance', 'Quality policies & operational SOPs', 'KPI monitoring & trend analysis', 'Audit preparation & surveys'],
   },
   {
-    title: 'Patient Safety',
+    title: 'Patient Safety & Governance',
     icon: 'HeartPulse',
     image: './assets/qs-audit-doc.jpg',
-    items: ['Safety protocols', 'Incident reporting', 'Risk management', 'CAPA implementation'],
+    items: ['Safety protocols & compliance', 'Incident management & reporting', 'Risk management & mitigation', 'CAPA planning & implementation'],
   },
   {
-    title: 'Accreditation & Compliance',
+    title: 'Accreditation & Standards',
     icon: 'BadgeCheck',
     image: './assets/qs-accreditation.jpg',
-    items: ['NABH standards', 'JCI-aligned practices', 'DOH requirements', 'Accreditation readiness'],
+    items: ['NABH accredited framework', 'JCI-oriented practices', 'DOH & ISO requirements', 'Transferable quality methodologies'],
   },
   {
     title: 'Hospital Operations',
     icon: 'Building2',
     image: './assets/qs-operations.jpg',
-    items: ['ICU & emergency services', 'Triage and critical care', 'Inter-departmental coordination', 'Roster and resource management'],
+    items: ['24x7 ICU & emergency triage', 'Inter-departmental coordination', 'Duty rosters & resource management', 'Clinical head & administration'],
   },
 ]
 
 export const contributions = [
-  'Implemented and maintained Quality Management Systems across multi-specialty hospital environments.',
-  'Prepared quality reports, KPI dashboards and audit documentation for leadership review.',
-  'Supported patient safety through incident reporting, risk management and CAPA processes.',
-  'Supported hospital operations, resource planning and team coordination for better patient care.',
+  '8+ years established, implemented and maintained Quality Management Systems (QMS) across multi-specialty hospitals.',
+  'Prepared quality reports, KPI dashboards, trend analysis and audit documentation for leadership review.',
+  'Supported patient safety through active incident management, clinical governance, risk assessment and CAPA processes.',
+  'Led 24x7 ICU, emergency services, triage protocols, duty rosters and operational HR coordination for better patient care.',
 ]
 
 export const education = [
@@ -154,11 +165,10 @@ export const education = [
 ]
 
 export const certifications = [
-  'BLS',
+  'BLS (Update Validity)',
   'NABH Internal Training',
   'Patient Safety & Infection Control',
-  'DHA Self-Assessment',
-  'Ready for DataFlow Verification',
+  'Ready for DataFlow Verification & DHA Self-Assessment',
 ]
 
 export const dhaEligibility = {
@@ -167,11 +177,29 @@ export const dhaEligibility = {
 }
 
 export const uaeReadiness = [
-  { label: 'Open to Relocate', detail: 'Dubai / Abu Dhabi', icon: 'MapPin' },
-  { label: 'DHA / DOH Environment', detail: 'Familiar with UAE healthcare frameworks', icon: 'Building2' },
-  { label: 'Ready for DataFlow Verification', detail: 'Documentation prepared', icon: 'CheckCircle' },
-  { label: 'Patient Safety & Quality Focus', detail: '13+ years of experience', icon: 'ShieldCheck' },
+  {
+    label: 'Available in Dubai',
+    detail: '27 October to 9 November for in-person meetings',
+    icon: 'Calendar',
+  },
+  {
+    label: '8+ Years Quality Experience',
+    detail: 'Substantial hospital quality management matching UAE requirements',
+    icon: 'Award',
+  },
+  {
+    label: 'JCI / DOH / DHA Alignment',
+    detail: 'Hands-on QMS, KPIs, CAPA & transferability to UAE healthcare',
+    icon: 'Building2',
+  },
+  {
+    label: 'Ready for DataFlow',
+    detail: 'DHA self-assessment completed (Eligibility: PHO5832)',
+    icon: 'CheckCircle',
+  },
 ]
+
+export const languages = ['English', 'Hindi', 'Marathi', 'Urdu']
 
 export const navLinks = [
   { label: 'Home', href: '#home' },

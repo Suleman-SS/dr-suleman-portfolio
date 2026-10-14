@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, Download } from 'lucide-react'
+import { Phone, Mail, MapPin, Download, Calendar } from 'lucide-react'
 import { personalInfo } from '../data/portfolioData'
 
 const Contact = () => {
@@ -19,7 +19,8 @@ const Contact = () => {
             <h2 className="section-heading section-heading--light">Let's Connect</h2>
             <p className="contact__description">
               I would be glad to discuss opportunities in Hospital Operations, Quality
-              Management or Patient Safety. Feel free to reach out.
+              Management, Patient Safety or Clinical Governance. Available for in-person
+              meetings in Dubai from 27 October to 9 November.
             </p>
           </motion.div>
 
@@ -31,9 +32,23 @@ const Contact = () => {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
+            {personalInfo.dubaiAvailability && (
+              <div className="contact__availability-badge">
+                <Calendar size={16} className="contact__availability-icon" />
+                <span>{personalInfo.dubaiAvailability}</span>
+              </div>
+            )}
+
+            {personalInfo.dubaiPhone && (
+              <a href={personalInfo.dubaiPhoneLink} className="contact__info-row contact__info-row--highlight">
+                <Phone size={17} className="contact__info-icon contact__info-icon--dubai" />
+                <span><strong>Dubai:</strong> {personalInfo.dubaiPhone}</span>
+              </a>
+            )}
+
             <a href={personalInfo.phoneLink} className="contact__info-row">
               <Phone size={17} className="contact__info-icon" />
-              <span>{personalInfo.phone}</span>
+              <span><strong>India:</strong> {personalInfo.phone}</span>
             </a>
 
             <a href={`mailto:${personalInfo.email}`} className="contact__info-row">
@@ -43,7 +58,7 @@ const Contact = () => {
 
             <div className="contact__info-row">
               <MapPin size={17} className="contact__info-icon" />
-              <span>{personalInfo.location} (Open to Relocate to UAE)</span>
+              <span>{personalInfo.location} (Open to UAE — {personalInfo.uaeTarget})</span>
             </div>
           </motion.div>
 

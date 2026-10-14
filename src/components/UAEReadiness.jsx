@@ -1,12 +1,15 @@
 import { motion } from 'framer-motion'
-import { MapPin, Building2, CheckCircle, ShieldCheck } from 'lucide-react'
+import { Calendar, Award, Building2, CheckCircle, MapPin, ShieldCheck } from 'lucide-react'
+import { uaeReadiness } from '../data/portfolioData'
 
-const readinessItems = [
-  { icon: MapPin, text: 'Open to Relocate to UAE (Dubai / Abu Dhabi)' },
-  { icon: Building2, text: 'DHA / DOH Environment' },
-  { icon: CheckCircle, text: 'Ready for DataFlow Verification' },
-  { icon: ShieldCheck, text: 'Committed to Quality and Patient Safety' },
-]
+const iconMap = {
+  Calendar,
+  Award,
+  Building2,
+  CheckCircle,
+  MapPin,
+  ShieldCheck,
+}
 
 const UAEReadiness = () => {
   return (
@@ -36,8 +39,9 @@ const UAEReadiness = () => {
             <p className="uae-readiness__description">
               I am open to opportunities in Hospital Operations, Quality Management, Patient
               Safety and Clinical Governance roles in Dubai and Abu Dhabi. With 13+ years of
-              diverse hospital experience and exposure to NABH standards, I am prepared for
-              DHA/DOH-compliant environments.
+              hospital experience (including 8+ years focused on Quality Management Systems) and
+              exposure to NABH standards, I am prepared for JCI / DHA / DOH-compliant environments.
+              Currently available in Dubai from 27 October to 9 November for in-person meetings.
             </p>
           </motion.div>
 
@@ -51,14 +55,17 @@ const UAEReadiness = () => {
           >
             <div className="uae-readiness__card">
               <ul className="uae-readiness__list">
-                {readinessItems.map((item, index) => {
-                  const Icon = item.icon
+                {uaeReadiness.map((item, index) => {
+                  const Icon = iconMap[item.icon] || CheckCircle
                   return (
                     <li key={index} className="uae-readiness__item">
                       <div className="uae-readiness__icon">
                         <Icon size={18} />
                       </div>
-                      <span className="uae-readiness__item-text">{item.text}</span>
+                      <div className="uae-readiness__item-content">
+                        <strong className="uae-readiness__item-label">{item.label}</strong>
+                        <span className="uae-readiness__item-detail">{item.detail}</span>
+                      </div>
                     </li>
                   )
                 })}

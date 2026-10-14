@@ -450,7 +450,15 @@ ul {
   font-size: 1.25rem;
   font-weight: 600;
   color: #BAE6FD;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.hero__subrole {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #93C5FD;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
 }
 
 .hero__tagline-row {
@@ -460,7 +468,50 @@ ul {
   gap: 10px;
   font-size: 0.88rem;
   color: #94A3B8;
+  margin-bottom: 14px;
+}
+
+.hero__dubai-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  border-radius: var(--radius-full);
+  color: #A7F3D0;
+  font-size: 0.82rem;
+  font-weight: 600;
   margin-bottom: 18px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.hero__dubai-icon {
+  color: #34D399;
+  flex-shrink: 0;
+}
+
+.hero__pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10B981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-green 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
 }
 
 .hero__pipe {
@@ -653,7 +704,38 @@ ul {
   font-size: 0.92rem;
   line-height: 1.7;
   color: var(--slate-600);
+  margin-bottom: 20px;
+}
+
+.about__target-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 24px;
+}
+
+.about__roles-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--navy-800);
+}
+
+.about__role-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.about__role-pill {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--navy-800);
+  background-color: var(--ice-100);
+  border: 1px solid var(--ice-300);
+  padding: 4px 11px;
+  border-radius: var(--radius-full);
 }
 
 .about__btn {
@@ -1353,7 +1435,7 @@ ul {
 
 .uae-readiness__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 14px;
 }
 
@@ -1367,6 +1449,26 @@ ul {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.uae-readiness__item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.uae-readiness__item-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  line-height: 1.35;
+}
+
+.uae-readiness__item-detail {
+  font-size: 0.79rem;
+  color: var(--slate-600);
+  line-height: 1.4;
+  margin-top: 2px;
 }
 
 .uae-readiness__item-text {
@@ -1414,7 +1516,27 @@ ul {
 .contact__center {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
+}
+
+.contact__availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  color: #A7F3D0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  width: fit-content;
+  margin-bottom: 2px;
+}
+
+.contact__availability-icon {
+  color: #34D399;
+  flex-shrink: 0;
 }
 
 .contact__info-row {
@@ -1430,9 +1552,17 @@ ul {
   color: #BAE6FD;
 }
 
+.contact__info-row--highlight {
+  color: #BAE6FD;
+}
+
 .contact__info-icon {
   color: #60A5FA;
   flex-shrink: 0;
+}
+
+.contact__info-icon--dubai {
+  color: #38BDF8;
 }
 
 .contact__right {

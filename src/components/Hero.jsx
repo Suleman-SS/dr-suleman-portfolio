@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Download } from 'lucide-react'
+import { ArrowRight, Download, Calendar, MapPin } from 'lucide-react'
 import { personalInfo } from '../data/portfolioData'
 
 const Hero = () => {
@@ -62,6 +62,17 @@ const Hero = () => {
             {personalInfo.title}
           </motion.h2>
 
+          {personalInfo.subTitle && (
+            <motion.p
+              className="hero__subrole"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+            >
+              {personalInfo.subTitle}
+            </motion.p>
+          )}
+
           <motion.div
             className="hero__tagline-row"
             initial={{ opacity: 0, y: 15 }}
@@ -73,6 +84,17 @@ const Hero = () => {
             <span>Clinical Governance</span>
             <span className="hero__pipe">|</span>
             <span>Hospital Administration</span>
+          </motion.div>
+
+          <motion.div
+            className="hero__dubai-pill"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.45 }}
+          >
+            <span className="hero__pulse-dot" />
+            <Calendar size={15} className="hero__dubai-icon" />
+            <span className="hero__dubai-text">{personalInfo.dubaiAvailability}</span>
           </motion.div>
 
           <motion.p
