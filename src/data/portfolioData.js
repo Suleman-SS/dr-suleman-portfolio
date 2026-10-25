@@ -9,7 +9,7 @@ export const personalInfo = {
   phoneLink: 'tel:+918208267265',
   dubaiPhone: '00971555771324',
   dubaiPhoneLink: 'tel:+971555771324',
-  dubaiAvailability: 'Available in Dubai from 27 October to 9 November',
+  dubaiAvailability: 'Available in Dubai from 30 October to 11 November',
   location: 'Mumbai, India',
   uaeTarget: 'Dubai / Abu Dhabi',
   cvPath: './cv.pdf',
@@ -19,7 +19,7 @@ export const stats = [
   { value: '13+', label: 'Years Total Experience', icon: 'Award' },
   { value: '8+ Yrs', label: 'Hospital Quality Management', icon: 'ShieldCheck' },
   { value: '24x7', label: 'ICU & Emergency Operations', icon: 'Clock' },
-  { value: 'In Dubai', label: '27 Oct – 9 Nov (Available)', icon: 'MapPin' },
+  { value: 'In Dubai', label: '30 Oct – 11 Nov (Available)', icon: 'MapPin' },
 ]
 
 export const aboutText = [
@@ -179,7 +179,7 @@ export const dhaEligibility = {
 export const uaeReadiness = [
   {
     label: 'Available in Dubai',
-    detail: '27 October to 9 November for in-person meetings',
+    detail: '30 October to 11 November for in-person meetings',
     icon: 'Calendar',
   },
   {

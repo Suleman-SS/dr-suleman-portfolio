@@ -41,7 +41,7 @@ const UAEReadiness = () => {
               Safety and Clinical Governance roles in Dubai and Abu Dhabi. With 13+ years of
               hospital experience (including 8+ years focused on Quality Management Systems) and
               exposure to NABH standards, I am prepared for JCI / DHA / DOH-compliant environments.
-              Currently available in Dubai from 27 October to 9 November for in-person meetings.
+              Currently available in Dubai from 30 October to 11 November for in-person meetings.
             </p>
           </motion.div>
 

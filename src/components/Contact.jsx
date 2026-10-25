@@ -20,7 +20,7 @@ const Contact = () => {
             <p className="contact__description">
               I would be glad to discuss opportunities in Hospital Operations, Quality
               Management, Patient Safety or Clinical Governance. Available for in-person
-              meetings in Dubai from 27 October to 9 November.
+              meetings in Dubai from 30 October to 11 November.
             </p>
           </motion.div>
 
