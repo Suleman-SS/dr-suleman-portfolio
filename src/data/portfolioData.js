@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: 'Dr. Sayed Suleman Shoukat',
   title: 'Hospital Operations & Quality Manager',
-  subTitle: 'CMO - Clinical Head | Seeking Hospital Administrator / Operational Head Roles',
+  subTitle: 'CMO - Clinical Head | Hospital Operations Manager | Healthcare Administrator',
   tagline: 'Patient Safety | Clinical Governance | Hospital Administration',
   heroDescription: '13+ years of experience across ICU, Emergency and Hospital Administration in NABH-accredited multi-specialty hospitals. Experienced in QMS, patient safety, clinical governance, risk management, and accreditation readiness.',
   email: 'dr.suleman@outlook.com',
@@ -24,16 +24,16 @@ export const stats = [
 
 export const aboutText = [
   'Dr. Sayed Suleman Shoukat is a Hospital Operations and Quality professional with more than 13 years of experience across ICU, Emergency and Hospital Administration in NABH-accredited multi-specialty hospitals.',
-  'Experienced in quality management systems (QMS), patient safety, clinical governance, risk management, accreditation readiness (NABH / JCI / DOH / ISO), incident management and KPI reporting.',
-  'Currently serving as Medical Head (Admin) at Siddhachal Hospitals, Mumbai. Seeking Hospital Administrator, Operational Head, Clinical Head and healthcare operations leadership roles in the UAE.',
+  'Experienced in quality management systems (QMS), patient safety, clinical governance, risk management, accreditation readiness (NABH / JCI / DOH Frameworks), incident management and KPI reporting.',
+  'Currently serving as Medical Head (Admin) at Siddhachal Hospitals, Mumbai. Hospital Operations Manager | Healthcare Administrator with healthcare operations and clinical leadership experience in the UAE.',
 ]
 
 export const targetRoles = [
   'Hospital Operations Manager',
+  'Healthcare Administrator',
   'Quality Manager',
   'Patient Safety Manager',
   'Clinical Governance',
-  'Hospital Administration',
   'CMO / Clinical Head',
 ]
 
@@ -44,13 +44,13 @@ export const currentRole = {
 
 export const expertise = [
   { title: 'Quality Management System (QMS)', icon: 'ClipboardCheck', description: 'Implementation, SOPs, audits and compliance across multi-specialty hospital environments.' },
-  { title: 'JCI / NABH / DOH / ISO Standards', icon: 'Award', description: 'Accreditation readiness, surveys and compliance under national and international frameworks.' },
+  { title: 'Familiarity with JCI / NABH / DOH Frameworks', icon: 'Award', description: 'Accreditation readiness, surveys and compliance under national and international frameworks.' },
   { title: 'Patient Safety & Clinical Governance', icon: 'ShieldCheck', description: 'Safety protocols, clinical governance frameworks, and infection control compliance.' },
   { title: 'Accreditation Readiness, Audits & Surveys', icon: 'FileCheck', description: 'Rigorous audit preparation, internal training, gap analysis and survey execution.' },
   { title: 'Quality Policies, SOPs & CAPA', icon: 'FileText', description: 'Drafting policies, operational standard operating procedures, and CAPA planning.' },
   { title: 'KPI Monitoring & Trend Analysis', icon: 'BarChart3', description: 'Quality indicator tracking, incident reporting, dashboards and performance trends.' },
   { title: 'Hospital Operations & Triage Management', icon: 'Activity', description: 'ICU/ICCU, emergency services, casualty, OT, and roster management.' },
-  { title: 'DHA Regulations & Continuous Improvement', icon: 'TrendingUp', description: 'Awareness of UAE healthcare regulatory frameworks and driving CQI culture.' },
+  { title: 'UAE Healthcare Regulatory Awareness', icon: 'TrendingUp', description: 'Awareness of UAE healthcare regulatory frameworks and driving CQI culture.' },
 ]
 
 export const aboutHighlights = [
@@ -132,7 +132,7 @@ export const qualitySafety = [
     title: 'Accreditation & Standards',
     icon: 'BadgeCheck',
     image: './assets/qs-accreditation.jpg',
-    items: ['NABH accredited framework', 'JCI-oriented practices', 'DOH & ISO requirements', 'Transferable quality methodologies'],
+    items: ['NABH accredited framework', 'JCI-oriented practices', 'DOH requirements', 'Transferable quality methodologies'],
   },
   {
     title: 'Hospital Operations',
@@ -168,13 +168,8 @@ export const certifications = [
   'BLS (Update Validity)',
   'NABH Internal Training',
   'Patient Safety & Infection Control',
-  'Ready for DataFlow Verification & DHA Self-Assessment',
+  'Ready for DataFlow Verification & Credentials Verification',
 ]
-
-export const dhaEligibility = {
-  title: 'Eligible for DHA Homeopathy Practitioner (TCAM)',
-  code: 'PHO5832',
-}
 
 export const uaeReadiness = [
   {
@@ -194,7 +189,7 @@ export const uaeReadiness = [
   },
   {
     label: 'Ready for DataFlow',
-    detail: 'DHA self-assessment completed (Eligibility: PHO5832)',
+    detail: 'Ready for DataFlow Verification & Credentials Verification',
     icon: 'CheckCircle',
   },
 ]

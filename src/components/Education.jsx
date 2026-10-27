@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { GraduationCap, Award, CheckCircle } from 'lucide-react'
-import { education, certifications, dhaEligibility } from '../data/portfolioData'
+import { education, certifications } from '../data/portfolioData'
 
 const Education = () => {
   return (
@@ -60,16 +60,6 @@ const Education = () => {
                 </li>
               ))}
             </ul>
-
-            <div className="education__dha-badge">
-              <div className="education__dha-icon">
-                <Award size={18} />
-              </div>
-              <div>
-                <span className="education__dha-title">{dhaEligibility.title}</span>
-                <span className="education__dha-code">{dhaEligibility.code}</span>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
